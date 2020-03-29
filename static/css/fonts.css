@@ -1,7 +1,10 @@
 body {
-  font-family: Optima, Candara, Calibri, Arial, sans-serif;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+  font-size: 14px;
+  color: #555;
+  text-align: justify;
 }
 code {
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: Monaco, Consolas, Courier New, Monospace;
   font-size: 85%;
 }
