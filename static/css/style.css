@@ -117,3 +117,7 @@ ptitle {
   text-decoration: none;
   font-weight: bold;
 }
+
+hidden {
+  color: #bdc3c7;
+}
