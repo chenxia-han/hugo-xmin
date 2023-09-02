@@ -10,55 +10,107 @@ body {
   padding-bottom: 20px;
 }
 
-/* brief-intro */
-p.brief-intro {
-  padding-top: 15px;
+/* info */
+.info {
+  display: flex;
+  width: 100%;
+
+  @media only screen and (max-width: 512px) {
+    flex-direction: column-reverse;
+  }
 }
 
-/* publications */
-h3.publications {
-  padding-top: 30px;
+/* intro */
+.intro {
+  width: 70%;
+  height: 12rem;
+  float: left;
+
+  @media only screen and (max-width: 512px) {
+    width: 100%;
+    height: 11rem;
+    float: none;
+  }
 }
 
-.publications small {
+/* avatar */
+.avatar {
+  width: 30%;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 512px) {
+    width: 100%;
+  }
+}
+
+.avatar img {
+  height: 12rem;
+}
+
+.pubtitle small {
   font-weight: normal;
 }
 
-/* publist */
-.publist table {
-  margin: auto;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
+/* pub */
+.pub {
+  display: flex;
+  width: 100%;
+
+  @media only screen and (max-width: 512px) {
+    display: block;
+  }
 }
 
-.publist th, td {
+.pubimg {
   padding: 5px;
   border: 0px;
-}
-
-.publist tr {
-  border-width: 1px;
-}
-
-.publist th, td:nth-child(odd) {
   width: 30%;
-  text-align: center;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 512px) {
+    width: 100%;
+    float: none;
+  }
 }
 
-.publist th, td:nth-child(even) {
+.pubinfo {
+  padding: 5px;
+  border: 0px;
   width: 70%;
   text-align: left;
+
+  @media only screen and (max-width: 512px) {
+    width: 100%;
+  }
 }
 
-.publist th, td:nth-child(even) a:nth-child(n+2) {
+.pubimg img {
+  max-height: 100px;
+  max-width: 100%;
+}
+
+.pubinfo a:nth-child(n+2) {
   color: #EE7F2D;
 }
 
-.publist img {
-  max-height: 100px;
-  max-width: 90%;
-  height: auto;
-  width: auto;
+highlight {
+  color: red;
+}
+
+ptitle {
+  color: #9996ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+hidden {
+  color: #bdc3c7;
 }
 
 /* link */
@@ -107,18 +159,4 @@ blockquote {
   background: #f9f9f9;
   border-left: 5px solid #ccc;
   padding: 3px 1em 3px;
-}
-
-highlight {
-  color: red;
-}
-
-ptitle {
-  color: #9996ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-hidden {
-  color: #bdc3c7;
 }
