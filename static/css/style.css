@@ -5,9 +5,33 @@ body {
   line-height: 1.5em;
 }
 
-/* page-header */
-.page-header {
-  padding-bottom: 20px;
+/* header */
+.header {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+}
+
+.name-div {
+  float: left;
+}
+
+.menu-div {
+  float: right;
+  margin-left: auto;
+}
+
+.menu {
+  float: right;
 }
 
 /* info */
@@ -157,7 +181,6 @@ a:hover {
 .menu li { display: inline-block; }
 .article-meta, .menu a {
   text-decoration: none;
-  background: #eee;
   padding: 5px;
   border-radius: 5px;
 }
