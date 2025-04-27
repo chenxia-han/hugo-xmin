@@ -155,13 +155,13 @@ body {
 }
 
 highlight {
-  color: red;
+  color: #9996ff;
 }
 
 ptitle {
-  color: #9996ff;
+  color: black;
   text-decoration: none;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /* link */
