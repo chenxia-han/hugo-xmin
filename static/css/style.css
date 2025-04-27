@@ -53,12 +53,12 @@ body {
 /* intro */
 .intro {
   width: 70%;
-  height: 12rem;
+  height: 10rem;
   float: left;
 
   @media only screen and (max-width: 512px) {
     width: 100%;
-    height: 11rem;
+    height: 5rem;
     float: none;
   }
 }
@@ -66,7 +66,7 @@ body {
 /* avatar */
 .avatar {
   width: 30%;
-  height: 12rem;
+  height: 10rem;
   display: flex;
   display: -webkit-flex;
   display: -moz-box;
@@ -86,7 +86,7 @@ body {
 }
 
 .avatar img {
-  height: 12rem;
+  height: 10rem;
 }
 
 .pubtitle small {
